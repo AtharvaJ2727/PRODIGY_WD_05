@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather Forecast</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <img src="Logo.png" alt="Logo">
+    <span>Clima</span>
+  </div>
+
+  <div class="search-bar">
+    <i>📍</i>
+    <input type="text" id="locationInput" placeholder="Search">
+    <button id="searchBtn">Search</button>
+  </div>
+
+  <button class="contact-btn">Contact</button>
+</header>
+
+<div class="weather-container">
+  
+  <div class="current-weather">
+    <div id="weather-icon"></div>
+    <h1 id="temp">--°C</h1>
+    <p id="description">Loading...</p>
+    <div class="details">
+      <p>Wind: <span id="wind">-- km/h</span></p>
+      <p>Humidity: <span id="humidity">--%</span></p>
+    </div>
+  </div>
+
+  <div class="hourly-forecast" id="hourlyForecast"></div>
+
+  <div class="weekly-forecast" id="weeklyForecast"></div>
+
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

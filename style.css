@@ -1,0 +1,134 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+/* Header Section */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #2c2c2c;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo img {
+  width: 30px;
+  height: auto;
+}
+
+.logo span {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+/* Search Bar */
+.search-bar {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 8px 15px;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.search-bar:hover {
+  background-color: #c0c0c0;
+  cursor: pointer;
+}
+
+.search-bar i {
+  color: black;
+  margin-right: 8px;
+}
+
+#locationInput {
+  border: none;
+  background: transparent;
+  outline: none;
+  font-size: 1rem;
+  width: 150px;
+  color: black;
+}
+
+#searchBtn {
+  padding: 6px 10px;
+  margin-left: 10px;
+  border: none;
+  border-radius: 8px;
+  background: orange;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Contact Button */
+.contact-btn {
+  background-color: #ffffff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+}
+
+.contact-btn:hover {
+  background-color: #c0c0c0;
+}
+
+/* Weather Container */
+.weather-container {
+  background: #2c2c2c;
+  padding: 20px;
+  border-radius: 20px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  margin: 30px auto;
+}
+
+.current-weather h1 {
+  font-size: 60px;
+  margin: 10px 0;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+#weather-icon img {
+  width: 100px;
+  height: 100px;
+}
+
+.hourly-forecast,
+.weekly-forecast {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.hourly-item,
+.day-item {
+  margin: 5px;
+  padding: 10px;
+  background: #3c3c3c;
+  border-radius: 10px;
+  width: 70px;
+}
